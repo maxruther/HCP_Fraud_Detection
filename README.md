@@ -6,6 +6,13 @@ I observe myriad recommendations from consulted literature to build an optimally
 
 Please see [**my full analysis**](HCPF_Full_Notebook.ipynb) in a Google Colab notebook.
 
+The major sections of this work center on:
+- data integration and feature engineering
+- exploratory visualization
+- correlation-based feature selection
+- resampling to mitigate class imbalance
+- hypertuning, testing, and logging numerous models through automated means
+
 <br></br>
 
 ### Recommendations from the Literature
@@ -38,6 +45,8 @@ Ultimately, I found these recommendations to be beneficial, overall. Below I bri
 | **Correlation-based feature selection** | **Beneficial** in interpreting variable importances and drastically reducing training times. Only slightly costed the models' precision scores, usually. |
 | **Alleviating class imbalance** | **Beneficial**, as models trained on samples so adjusted were nearly always more precise than their counterparts.
 | **Classifying with ensemble learning methods** | **Mixed findings** on this point. The best models did come from two ensemble learning methods. But the two non-ensemble methods, Naive Bayes and SVM, hit higher heights than Gradient Boosting (an ensemble method.) Also counter to the notion of ensemble advantageousness was a Naive Bayes model handily outperforming the others on the more class-imbalanced datasets. |
+
+<br></br>
 
 ### Optimal Classifier of Potentially Fraudulent Providers
 
