@@ -4,32 +4,47 @@
 
 I observe myriad recommendations from consulted literature to build an optimally precise classifier of healthcare providers' potential fraudulence. The datasets come from a Kaggle post, and its labels resemble one of the few publicly available sources of labelled provider fraud data, the List of Excluded Individuals/Entities (LEIE).
 
-Please see [**my analysis**](HCPF_Full_Notebook.ipynb) in a Google Colab notebook.
+Please see [**my full analysis**](HCPF_Full_Notebook.ipynb) in a Google Colab notebook.
 
 ## Techniques from the Literature
 
 The recommendations I attempt to implement from the literature, on approaching fraud detection in a healthcare claim context, include the following:
-- **Feature engineering to aggregate** claim and patient data to the provider level.
-- **Correlation-based feature selection** to interpret variable importances and drastically reduce training times.
-- **Alleviating class imbalance** to a 75-25 ratio.
-- **Classifying with ensemble learning methods**, which were described as particularly effective on small samples, as well as those with rebalanced class ratios.
+- **Feature engineering to aggregate** claim and patient data to the provider level. \[1\]
+- **Correlation-based feature selection** to interpret variable importances and drastically reduce training times. \[2\]
+- **Alleviating class imbalance** to a 75-25 ratio. \[3\]
+- **Classifying with ensemble learning methods**, which were described as particularly effective on small samples, as well as those with rebalanced class ratios. \[3\]
+
+#### Bibliography
+
+1. Kumaraswamy, Nishamathi, et al. "Healthcare fraud data mining methods: A look back and look ahead." _Perspectives in health information management_ 19.1 (2022).
+
+2. Bolón-Canedo, Verónica, et al. "A review of microarray datasets and applied feature selection methods." _Information sciences_ 282 (2014): 111-135.
+
+3. Herland, Matthew, Richard A. Bauder, and Taghi M. Khoshgoftaar. "Approaches for identifying US medicare fraud in provider claims data." _Health care management science_ 23 (2020): 2-19.
 
 
 ## Findings
+
+### Assessing the Recommended Techniques
 
 Ultimately, I found these recommendations to be beneficial, overall. Below I briefly comment with my findings for each:
 
 | Recommended Technique | My Assessment thereof in this Application |
 |---|---|
-| **Feature engineering to aggregate to the provider level** | **So critically necessary** for my application that it is difficult to conceive of a comparable alternative, and thus assess further. |
-| **Correlation-based feature selection** | **Indeed beneficial** in interpreting variable importances and drastically reducing training times. Only slightly costed the models' precision scores, usually. |
-| **Alleviating class imbalance** | **Indeed beneficial**, as models trained on samples so adjusted were nearly always more precise than their counterparts.
-| **Classifying with ensemble learning methods** | Mixed findings on this point. The best models did come from two ensemble learning methods. But the two non-ensemble methods, Naive Bayes and SVM, hit higher heights than Gradient Boosting (an ensemble method.) Also counter to the notion of ensemble advantageousness was a Naive Bayes model handily outperforming the others on the more class-imbalanced datasets. |
+| **Feature engineering to aggregate to the provider level** | **So plainly necessary** for my application that I cannot consider it as a recommendation taken. |
+| **Correlation-based feature selection** | **Beneficial** in interpreting variable importances and drastically reducing training times. Only slightly costed the models' precision scores, usually. |
+| **Alleviating class imbalance** | **Beneficial**, as models trained on samples so adjusted were nearly always more precise than their counterparts.
+| **Classifying with ensemble learning methods** | **Mixed findings** on this point. The best models did come from two ensemble learning methods. But the two non-ensemble methods, Naive Bayes and SVM, hit higher heights than Gradient Boosting (an ensemble method.) Also counter to the notion of ensemble advantageousness was a Naive Bayes model handily outperforming the others on the more class-imbalanced datasets. |
+
+### Optimal Classifier of Potentially Fraudulent Providers
 
 
 
 
 <!--
+it is difficult to conceive of a comparable alternative, and thus assess further.
+
+
 Models trained on samples that had their class imbalance alleviated to a 75-25 ratio usually did better than those that remained more asymmetric. Correlation-based feature selection seemed effective in identifying the most important variables. CFS also was effective at reducing training times, while only slightly costing precision.
 
 More complicated might be the findings on the first and last recommendations listed above. In my case, to form a dataset for the classification of providers, it was difficult to imagine an alternative to the recommendation: aggregating the claim data to the provider level. It is conceivable to instead train a classifier on the initially claim-level dataset, but it is too absurd to produce an interesting comparison.
