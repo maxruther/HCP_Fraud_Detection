@@ -6,9 +6,11 @@ I observe myriad recommendations from consulted literature to build an optimally
 
 Please see [**my full analysis**](HCPF_Full_Notebook.ipynb) in a Google Colab notebook.
 
-## Techniques from the Literature
+<br></br>
 
-The recommendations I attempt to implement from the literature, on approaching fraud detection in a healthcare claim context, include the following:
+### Recommendations from the Literature
+
+The recommendations I implement from the consulted literature, which mostly concerns approaches to fraud detection in healthcare claim data, include the following:
 - **Feature engineering to aggregate** claim and patient data to the provider level. \[1\]
 - **Correlation-based feature selection** to interpret variable importances and drastically reduce training times. \[2\]
 - **Alleviating class imbalance** to a 75-25 ratio. \[3\]
@@ -22,6 +24,7 @@ The recommendations I attempt to implement from the literature, on approaching f
 
 3. Herland, Matthew, Richard A. Bauder, and Taghi M. Khoshgoftaar. "Approaches for identifying US medicare fraud in provider claims data." _Health care management science_ 23 (2020): 2-19.
 
+<br></br>
 
 ## Findings
 
@@ -38,10 +41,17 @@ Ultimately, I found these recommendations to be beneficial, overall. Below I bri
 
 ### Optimal Classifier of Potentially Fraudulent Providers
 
+The optimally precise classifier came from using Ada Boosting on the rebalanced, CFS-reduced sample. It scored a precision of `0.864`.
+
+<br></br>
+![test](/visualizations/model_comparison_test.png)
+
 
 
 
 <!--
+--- SAVED WRITING / SCRATCH ---
+
 it is difficult to conceive of a comparable alternative, and thus assess further.
 
 
