@@ -6,16 +6,30 @@ I observe myriad recommendations from consulted literature to build an optimally
 
 Please see [**my full analysis**](HCPF_Full_Notebook.ipynb) in a Google Colab notebook.
 
-The major sections of this work center on:
-- data integration and feature engineering
-- exploratory visualization
-- correlation-based feature selection
-- resampling to mitigate class imbalance
-- hypertuning, testing, and logging numerous models through automated means
+If the notebook of my full analysis is too large, please see these segments into which I've broken it up:
+1. [Setup](analysis_in_segments/HPFD_1_Setup.ipynb)
+2. [Integration I](analysis_in_segments/HPFD_2_Integration1.ipynb)
+3. [Feature Engineering](analysis_in_segments/HPFD_3_FeatureEngineering.ipynb)
+4. [Integration II](analysis_in_segments/HPFD_4_Integration2.ipynb)
+5. [EDA](analysis_in_segments/HPFD_5_EDA.ipynb)
+6. [Sampling](analysis_in_segments/HPFD_6_Sampling.ipynb)
+7. [Modelling](analysis_in_segments/HPFD_7_Modelling.ipynb)
+
+<br>
+
+The highlights of this work might relate to the following topics, and reside in the corresponding notebooks:
+
+| Topic of Highlight | Resident Notebook(s) |
+| --- | --- |
+| data integration and feature engineering | [Integration I](analysis_in_segments/HPFD_2_Integration1.ipynb), [Feature Engineering](analysis_in_segments/HPFD_3_FeatureEngineering.ipynb), [Integration II](analysis_in_segments/HPFD_4_Integration2.ipynb) |
+| exploratory visualization | [EDA](analysis_in_segments/HPFD_5_EDA.ipynb) |
+| correlation-based feature selection | [EDA](analysis_in_segments/HPFD_5_EDA.ipynb) |
+| resampling to mitigate class imbalance | [Sampling](analysis_in_segments/HPFD_6_Sampling.ipynb) |
+| hypertuning, testing, and logging numerous models through automated means | [Modelling](analysis_in_segments/HPFD_7_Modelling.ipynb) |
 
 <br></br>
 
-### Recommendations from the Literature
+## Recommendations from the Literature
 
 The recommendations I implement from the consulted literature, which mostly concerns approaches to fraud detection in healthcare claim data, include the following:
 - **Feature engineering to aggregate** claim and patient data to the provider level. \[1\]
