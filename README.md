@@ -4,7 +4,7 @@
 
 I observe myriad recommendations from consulted literature to build an optimally precise classifier of healthcare providers' potential fraudulence. The datasets come from a Kaggle post, and its labels resemble one of the few publicly available sources of labelled provider fraud data, the List of Excluded Individuals/Entities (LEIE).
 
-Please see [**my full analysis**](HCPF_Full_Notebook.ipynb) in a Google Colab notebook.
+Please see [**my full analysis**](HPFD_Full_Analysis.ipynb) in a Google Colab notebook.
 
 If the notebook of my full analysis is too large, please see these segments into which I've broken it up:
 1. [Setup](analysis_in_segments/HPFD_1_Setup.ipynb)
