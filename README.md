@@ -1,11 +1,8 @@
 # Healthcare Provider Fraud Detection
 
-![]()
-
 <p align="center" width="100%">
-  <img src="/visualizations/stock_image--healthcare_fraud.jpg" width="30%">
+  <img src="/visualizations/HPFD banner.png" width="100%">
 </p>
-<br></br>
 
 ## Overview
 
