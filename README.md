@@ -1,5 +1,12 @@
 # Healthcare Provider Fraud Detection
 
+![]()
+
+<p align="center" width="100%">
+  <img src="/visualizations/stock_image--healthcare_fraud.jpg" width="30%">
+</p>
+<br></br>
+
 ## Overview
 
 I observe myriad recommendations from consulted literature to build an optimally precise classifier of healthcare providers' potential fraudulence. The datasets come from a Kaggle post, and its labels resemble one of the few publicly available sources of labelled provider fraud data, the List of Excluded Individuals/Entities (LEIE).
