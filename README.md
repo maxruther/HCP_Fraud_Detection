@@ -19,9 +19,9 @@ If the notebook of my full analysis is too large, please see these segments into
 6. [Sampling](analysis_in_segments/HPFD_6_Sampling.ipynb)
 7. [Modelling](analysis_in_segments/HPFD_7_Modelling.ipynb)
 
-<br>
 
-The highlights of this work might relate to the following topics, and reside in the corresponding notebooks:
+### Highlights
+The highlights of this work might relate to the following topics, and reside in the corresponding linked notebooks:
 
 | Topic of Highlight | Resident Notebook(s) |
 | --- | --- |
